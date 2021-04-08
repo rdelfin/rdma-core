@@ -216,10 +216,10 @@ static struct sa_data {
 static const char *acme = IBACM_BIN_PATH "/ib_acme -A";
 static const char *opts_file = ACM_CONF_DIR "/" ACM_OPTS_FILE;
 static const char *addr_file = ACM_CONF_DIR "/" ACM_ADDR_FILE;
-static char log_file[128] = IBACM_LOG_FILE;
+static char log_file[512] = IBACM_LOG_FILE;
 static int log_level = 0;
 static int umad_debug_level;
-static char lock_file[128] = IBACM_PID_FILE;
+static char lock_file[512] = IBACM_PID_FILE;
 static short server_port = 6125;
 static int server_mode = IBACM_SERVER_MODE_DEFAULT;
 static int acme_plus_kernel_only = IBACM_ACME_PLUS_KERNEL_ONLY_DEFAULT;

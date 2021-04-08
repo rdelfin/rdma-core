@@ -271,8 +271,8 @@ static __thread char log_data[ACM_MAX_ADDRESS];
 /*
  * Service options - may be set through ibacm_opts.cfg file.
  */
-static char route_data_file[128] = ACM_CONF_DIR "/ibacm_route.data";
-static char addr_data_file[128] = ACM_CONF_DIR "/ibacm_hosts.data";
+static char route_data_file[512] = ACM_CONF_DIR "/ibacm_route.data";
+static char addr_data_file[512] = ACM_CONF_DIR "/ibacm_hosts.data";
 static enum acmp_addr_prot addr_prot = ACMP_ADDR_PROT_ACM;
 static int addr_timeout = 1440;
 static enum acmp_route_prot route_prot = ACMP_ROUTE_PROT_SA;
